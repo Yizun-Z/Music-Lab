@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Lab</title>
+
+    <!-- Goole Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icone Fonts -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="home-bg">
+      <!--====================== START HEADER AREA ======================= -->
+      <header class="header-area">
+        <div class="container">
+          <div class="header">
+            <ul>
+              <li>
+                <a href="3_selection.html"><img src="assets/img/icon1.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="4_3dworld.html"><img src="assets/img/icon2.png" alt="" /></a>
+              </li>
+              <li>
+                <a class="active" load="5_edit.html"
+                  ><img src="assets/img/icon3.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="6_chat.html"
+                  ><img src="assets/img/icon4.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="7_profile.html"
+                  ><img src="assets/img/icon5.png" alt=""
+                /></a>
+              </li>
+            </ul>
+            <div class="header-arrow">
+              <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--===================== END HEADER AREA ======================= -->
+
+      <!--===================== START BANNER AREA ======================= -->
+      <section class="banner-area">
+        <div class="banner">
+          <h2>
+            How’s that sound? Or try to
+            <span class="inline-color">add</span> more here!
+          </h2>
+          <div class="plus-icon text-center">
+            <a href="4_3dworld.html"><img src="assets/img/plus.png" alt="" /></a> 
+          </div>
+          <div class="previe-btn text-center">
+            <img src="assets/img/play.png" alt="" id="preview" />
+            <p>PREVIEW</p>
+          </div>
+          <div class="next-btn home-next text-center">
+            <a load="6_chat.html"><img src="assets/img/next.png" alt="" /></a>
+          </div>
+          <div class="song-icon">
+            <div class="first-icon">
+              <img src="assets/img/song1.png" alt="" />
+            </div>
+            <div class="second-icon">
+              <img src="assets/img/song2.png" alt="" />
+            </div>
+            <div class="third-icon">
+              <img src="assets/img/song3.png" alt="" />
+            </div>
+            <div class="banner-shape">
+              <img src="assets/img/shape.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--===================== END HEADER AREA ======================= -->
+
+      <!--===================== START FOOTER AREA ======================= -->
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="footer-left">
+                <ul>
+                  <li>
+                    <img src="assets/img/map.png" alt="" />
+                  </li>
+                  <li>
+                    <a href="#"><p>Sydney, NSW</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="footer-right text-end">
+                <a class="got-btn-show" href="#"
+                  ><img src="assets/img/what.png" alt=""
+                /></a>
+                <div class="got-it-popup">
+                  <h3>Edit the Music</h3>
+                  <p>
+                    Listen to the music made with different people! You can also
+                    click on the plus sign to add a new melody. If you're not satisfy with
+                    the result, easily back to previous step.
+                  </p>
+                  <div class="got-it-btn">
+                    <button id="got-it-hide">got it</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--===================== END FOOTER AREA ======================= -->
+    </div>
+
+    <!-- Add Audio -->
+    <audio id="sw" preload="auto">
+      <source src="assets/audio/sw.mp3" type="audio/mp3"></source>
+  </audio>
+
+    <!-- All Js File -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr-3.11.2.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
