@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Lab</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Lab</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    
-    <!-- Icon Library -->
-    <script src="https://kit.fontawesome.com/00732ea5ed.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&family=Poppins:wght@500&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Library -->
+  <script src="https://kit.fontawesome.com/00732ea5ed.js" crossorigin="anonymous"></script>
 
 
-    <!-- CSS  -->
-    <!-- <link rel="stylesheet" href="css/style2.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/environment.css">
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/environment.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
-    <header class="header-area">
-        <div class="container">
-          <div class="header">
-            <ul>
-              <li>
-                <a href="3_selection.html"><img src="assets/img/icon1.png" alt="" /></a>
-              </li>
-              <li>
-                <a class="active" href="4_3dworld.html"><img src="assets/img/icon2.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="5_edit.html"
-                  ><img src="assets/img/icon3.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="6_chat.html"
-                  ><img src="assets/img/icon4.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a  load="7_profile.html"
-                  ><img src="assets/img/icon5.png" alt=""
-                /></a>
-              </li>
-            </ul>
+  <header class="header-area">
+    <div class="container">
+      <div class="header">
+        <ul>
+          <li>
+            <a href="3_selection.html"><img src="assets/img/icon1.png" alt="" /></a>
+          </li>
+          <li>
+            <a class="active" href="4_3dworld.html"><img src="assets/img/icon2.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="5_edit.html"><img src="assets/img/icon3.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="6_chat.html"><img src="assets/img/icon4.png" alt="" /></a>
+          </li>
+          <li>
+            <a load="7_profile.html"><img src="assets/img/icon5.png" alt="" /></a>
+          </li>
+        </ul>
 
-            <div class="header-arrow">
-              <a href="index.html"
-                ><img src="assets/img/logo.png" alt=""
-              /></a>
-            </div>
-          </div>
+        <div class="header-arrow">
+          <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
         </div>
-      </header>
-
-      <div id="overlay">
-          <div class="location" data-tilt transform-style: preserve-3d data-tilt-perspective="2000" data-tilt-glare data-tilt-max-glare="0.1">
-            <div class="remind" style="transform: translateZ(50px)"><p>Remind: We will only use your <strong>location information</strong> to help you get the music from people near you. 
-                If you do not wish to share, we would like you to select your state location to enhance the experience.</p></div>
-            
-            <img src="assets/img/AUmap.png" alt="" style="transform: translateZ(50px)" >
-          </div>
-          <div class="next-btn" id="overlay">
-              <button id="startButton"><img src="assets/img/next.png" alt="" />
-            </button>
-        </div>
+      </div>
     </div>
+  </header>
 
-      <div class="next-btn">
-        <a href="5_edit.html"><img src="assets/img/next.png" alt="" /></a>
+  <div id="overlay">
+    <div class="location" data-tilt transform-style: preserve-3d data-tilt-perspective="2000" data-tilt-glare
+      data-tilt-max-glare="0.1">
+      <div class="remind" style="transform: translateZ(50px)">
+        <p>Remind: We will only use your <strong>location information</strong> to help you get the music from people
+          near you.
+          If you do not wish to share, we would like you to select your state location to enhance the experience.</p>
       </div>
 
+      <img src="assets/img/AUmap.png" alt="" style="transform: translateZ(50px)">
+    </div>
+    <div class="next-btn" id="overlay">
+      <button id="startButton"><img src="assets/img/next.png" alt="" />
+      </button>
+    </div>
+  </div>
 
-    <!-- Audio File -->
-    <audio id="s1" preload="auto" style="display: none">
-        <source src="assets/audio/s1.mp3" type="audio/mpeg">
-    </audio>
-
-    <audio id="s2" preload="auto" style="display: none">
-        <source src="assets/audio/s5.mp3" type="audio/mpeg">
-    </audio>
-
-    <audio id="s3" loop preload="auto" style="display: none">
-        <source src="assets/audio/s4.mp3" type="audio/mpeg">
-    </audio>
-
-    <audio id="s4" loop preload="auto" style="display: none">
-        <source src="assets/audio/s2.mp3" type="audio/mpeg">
-    </audio>
+  <div class="next-btn">
+    <a href="5_edit.html"><img src="assets/img/next.png" alt="" /></a>
+  </div>
 
 
+  <!-- Audio File -->
+  <audio id="s1" preload="auto" style="display: none">
+    <source src="assets/audio/s1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="s2" preload="auto" style="display: none">
+    <source src="assets/audio/s5.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="s3" loop preload="auto" style="display: none">
+    <source src="assets/audio/s4.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="s4" loop preload="auto" style="display: none">
+    <source src="assets/audio/s2.mp3" type="audio/mpeg">
+  </audio>
 
 
-    <!-- JS Library -->
-    <script type="module" src="js/environment.js"></script>
-    <script src="js/vanilla-tilt.min.js"></script>
+  <!-- JS Library -->
+  <script type="module" src="js/environment.js"></script>
+  <script src="js/vanilla-tilt.min.js"></script>
 </body>
